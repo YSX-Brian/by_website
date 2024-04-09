@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 500vh;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #2d0249;
+}
+
+main {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.navbar {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  background: white;
+}
+
+.links a {
+  margin-right: 1.8rem;
+  padding: 1rem;
+  color: inherit;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 0 grey;
+  background: lightgray;
+  border-radius: 1rem;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.profile {
+  border-radius: 50%;
+  margin: 0.5rem 1rem;
+}
+
+.intro img {
+  margin-right: 2rem;
+  max-height: 300px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#about ul {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  list-style: none;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+
+.project-grid article {
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 2px grey;
+}
+
+#resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+footer {
+  border-top: 1px solid black;
+  text-align: center;
+  padding-bottom: 1rem;
+}
