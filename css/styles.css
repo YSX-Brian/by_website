@@ -23,6 +23,7 @@ main {
   width: 100vw;
   height: 5vh;
   background: white;
+  z-index: 1;
 }
 
 .links a {
@@ -59,6 +60,17 @@ a:hover {
 .intro img {
   margin-right: 2rem;
   max-height: 300px;
+}
+
+.square {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 1s, transform 1s;
+}
+
+.square-transition {
+  opacity: 1;
+  transform: none;
 }
 
 #about {
@@ -113,6 +125,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  text-align: center;
+}
+
+.contact-email {
+  margin-bottom: 1rem;
 }
 
 footer {
