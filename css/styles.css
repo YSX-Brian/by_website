@@ -6,6 +6,7 @@ body {
   height: 500vh;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: #2d0249;
+  text-align: center;
 }
 
 main {
@@ -52,13 +53,54 @@ a:hover {
   text-align: center;
 }
 
+.intro h1 {
+  opacity: 0;
+  animation-duration: 1s;
+  animation-name: appear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#word-one {
+  opacity: 0;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-name: appear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#word-two {
+  opacity: 0;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-name: appear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#word-three {
+  opacity: 0;
+  animation-delay: 3.5s;
+  animation-duration: 1s;
+  animation-name: appear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .profile {
   border-radius: 50%;
   margin: 0.5rem 1rem;
-}
-
-.intro img {
-  margin-right: 2rem;
   max-height: 300px;
 }
 
@@ -117,6 +159,20 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+.resume-button {
+  margin-top: 1rem;
+  border: 0;
+  border-radius: 0.3rem;
+  background: rgba(123, 28, 247, 0.856);
+  padding: 0.6rem;
+  color: white;
+  cursor: pointer;
+}
+
+.resume-button:hover {
+  background: rgb(123, 28, 247);
 }
 
 #contact {
