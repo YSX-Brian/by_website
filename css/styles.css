@@ -14,6 +14,12 @@ main {
   margin: 0 auto;
 }
 
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
 .navbar {
   border: 1px solid grey;
   display: flex;
@@ -33,12 +39,6 @@ main {
   color: inherit;
 }
 
-a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-}
-
 a:hover {
   text-shadow: 0 0 0 grey;
   background: lightgray;
@@ -50,42 +50,33 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  text-align: center;
 }
 
-.intro h1 {
+#phrase-one,
+#word-one,
+#word-two,
+#word-three {
   opacity: 0;
   animation-duration: 1s;
   animation-name: appear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+#phrase-one {
+  animation-delay: 1.2s;
 }
 
 #word-one {
-  opacity: 0;
-  animation-delay: 1.5s;
-  animation-duration: 1s;
-  animation-name: appear;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
 #word-two {
-  opacity: 0;
-  animation-delay: 2.5s;
-  animation-duration: 1s;
-  animation-name: appear;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-delay: 2.8s;
 }
 
 #word-three {
-  opacity: 0;
-  animation-delay: 3.5s;
-  animation-duration: 1s;
-  animation-name: appear;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-delay: 3.6s;
 }
 
 @keyframes appear {
@@ -98,11 +89,11 @@ a:hover {
   }
 }
 
-.profile {
+/* .profile {
   border-radius: 50%;
   margin: 0.5rem 1rem;
   max-height: 300px;
-}
+} */
 
 .square {
   opacity: 0;
@@ -121,7 +112,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  text-align: center;
 }
 
 #about ul {
@@ -181,7 +171,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  text-align: center;
 }
 
 .contact-email {
@@ -189,7 +178,6 @@ a:hover {
 }
 
 footer {
-  border-top: 1px solid black;
-  text-align: center;
+  border: 1px solid grey;
   padding-bottom: 1rem;
 }
