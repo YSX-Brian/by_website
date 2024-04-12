@@ -1,16 +1,16 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("square-transition");
+      entry.target.classList.add("part-transition");
       return;
     }
 
-    entry.target.classList.remove("square-transition");
+    entry.target.classList.remove("part-transition");
   });
 });
 
 // Get multiple elements instead of a single one using "querySelectorAll"
-const squares = document.querySelectorAll(".square");
+const parts = document.querySelectorAll(".part");
 
 // Loop over the elements and add each one to the observer
-squares.forEach((element) => observer.observe(element));
+parts.forEach((element) => observer.observe(element));

@@ -53,7 +53,7 @@ a:hover {
   background: url(../img/sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 98.5vw;
   color: white;
 }
 
@@ -100,13 +100,13 @@ a:hover {
   max-height: 300px;
 } */
 
-.square {
+.part {
   opacity: 0;
   transform: scale(1.1);
   transition: opacity 1s, transform 1s;
 }
 
-.square-transition {
+.part-transition {
   opacity: 1;
   transform: none;
 }
