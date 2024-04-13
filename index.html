@@ -19,12 +19,10 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
     </nav>
     <main>
       <section class="intro">
@@ -38,7 +36,7 @@
           </div>
         </div>
       </section>
-      <section id="about">
+      <section id="about" class="page-style">
         <div class="part part-transition">
           <h2>About</h2>
           <p>Thank you for visiting my page!</p>
@@ -50,9 +48,9 @@
             forward to doing so much more as a developer.
           </p>
           <p>
-            In my previous life, I was a cancer researcher who had the privilege
-            of working with many great scientists. If interested, you may view
-            my publications
+            Prior to my career switch, I was a cancer researcher who had the
+            privilege of working with many great scientists. If interested, you
+            can take a look at my publications
             <a
               href="https://www.researchgate.net/scientific-contributions/Brian-Yueh-2184225265"
               target="_blank"
@@ -63,9 +61,7 @@
             <h3>Main Skills</h3>
             <ul>
               <li><i class="fa-brands fa-react fa-xl"></i> React</li>
-              <li>
-                <i class="fa-brands fa-js fa-xl"></i> JavaScript/Typescript
-              </li>
+              <li><i class="fa-brands fa-js fa-xl"></i> JavaScript/TS</li>
               <li><i class="fa-brands fa-python fa-xl"></i> Python</li>
               <li><i class="fa-brands fa-css3 fa-xl"></i> CSS</li>
               <li><i class="fa-brands fa-html5 fa-xl"></i> HTML</li>
@@ -89,125 +85,143 @@
           <h3>Currently Learning: Django!</h3>
         </div>
       </section>
-      <section id="portfolio">
+      <section id="portfolio" class="page-style">
         <div class="part part-transition">
           <h2>Portfolio</h2>
           <div class="project-grid">
             <article>
-              <h3>MyFlix/Movies</h3>
-              <img
-                src="img/movies-main-cropped.png"
-                alt="Movies site main page."
-              />
-              <p>
-                The client-side component of a "movies" web application, built
-                with React/JS. Users can sign up, update/change their account
-                information, and manage a list of favorite movies.
-              </p>
-              <a
-                href="https://github.com/YSX-Brian/Movies-react-client"
-                target="_blank"
-                >GitHub</a
-              >
-              <a href="https://myflix17507.netlify.app/" target="_blank"
-                >Website</a
-              >
+              <img src="img/movies-main.png" alt="Movies site main page." />
+              <div class="project-body">
+                <h3>MyFlix/Movies</h3>
+                <p>
+                  The client-side component of a "movies" web application, built
+                  with React/JS. Users can sign up, update/change their account
+                  information, and manage a list of favorite movies.
+                </p>
+                <a
+                  href="https://github.com/YSX-Brian/Movies-react-client"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a href="https://myflix17507.netlify.app/" target="_blank"
+                  >Website</a
+                >
+              </div>
             </article>
             <article>
-              <h3>Games</h3>
               <img src="img/games-main.png" alt="Games site main page." />
-              <p>
-                Video game information app built with React/TypeScript and
-                Chakra UI. Search games by title, genre, platform, and more.
-              </p>
-              <a
-                href="https://github.com/YSX-Brian/games-project"
-                target="_blank"
-                >GitHub</a
-              >
-              <a href="https://games-project-pi.vercel.app/" target="_blank"
-                >Website</a
-              >
+              <div class="project-body">
+                <h3>Games</h3>
+                <p>
+                  Video game information app built with React/TypeScript and
+                  Chakra UI. Search games by title, genre, platform, and more.
+                </p>
+                <a
+                  href="https://github.com/YSX-Brian/games-project"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a href="https://games-project-pi.vercel.app/" target="_blank"
+                  >Website</a
+                >
+              </div>
             </article>
 
             <article>
-              <h3>PokeDex App</h3>
               <img src="img/poke-modal.png" alt="PokeDex modal view." />
-              <p>
-                A PokeDex application built with JS and Bootstrap that gives
-                information on the first 251 Pokemon.
-              </p>
-              <a href="https://github.com/YSX-Brian/PokeDex-App" target="_blank"
-                >GitHub</a
-              >
-              <a href="https://ysx-brian.github.io/PokeDex-App/" target="_blank"
-                >Website</a
-              >
+              <div class="project-body">
+                <h3>PokeDex App</h3>
+                <p>
+                  A PokeDex application built with JS and Bootstrap that gives
+                  information on the first 251 Pokemon.
+                </p>
+                <a
+                  href="https://github.com/YSX-Brian/PokeDex-App"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://ysx-brian.github.io/PokeDex-App/"
+                  target="_blank"
+                  >Website</a
+                >
+              </div>
             </article>
             <article>
-              <h3>MyFlix/Movies - Angular</h3>
               <img
                 src="img/myFlix-Angular-main.png"
                 alt="Movies angular client main page."
               />
-              <p>
-                The client-side component of a "movies" web application, built
-                with Angular/TypeScript. Connects to the same Movies API as the
-                React client.
-              </p>
-              <a
-                href="https://ysx-brian.github.io/myFlix-Angular-client/welcome"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                href="https://github.com/YSX-Brian/myFlix-Angular-client"
-                target="_blank"
-                >Website</a
-              >
+              <div class="project-body">
+                <h3>MyFlix/Movies - Angular</h3>
+                <p>
+                  The client-side component of a "movies" web application, built
+                  with Angular/TypeScript. Connects to the same Movies API as
+                  the React client.
+                </p>
+                <a
+                  href="https://ysx-brian.github.io/myFlix-Angular-client/welcome"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://github.com/YSX-Brian/myFlix-Angular-client"
+                  target="_blank"
+                  >Website</a
+                >
+              </div>
             </article>
-            <article>
+            <article class="project-body-other">
               <h3>MyFlix/Movies API</h3>
               <p>
-                The server-side component of a "movies" web application. Allows
-                users to access a database with information on movies, genres,
-                and directors.
+                A REST API and the server-side component of a "movies" web
+                application. Allows users to access a database with information
+                on movies, genres, and directors.
               </p>
               <a href="https://github.com/YSX-Brian/Movie_API" target="_blank"
                 >GitHub</a
               >
             </article>
             <article>
-              <h3>Portfolio Website</h3>
-              <p>
-                This site you're viewing now was built to replace my old one,
-                which was my very first coding project back in 2022. Created
-                with JS, HTML and CSS. Check out the repo below!
-              </p>
-              <a href="https://github.com/YSX-Brian/by_website" target="_blank"
-                >GitHub</a
-              >
+              <img
+                src="img/website.png"
+                alt="Portfolio website contact me screen."
+              />
+              <div class="project-body">
+                <h3>Portfolio Website</h3>
+                <p>
+                  This site you're viewing now was built to replace my old one,
+                  which was my very first coding project back in 2022. Created
+                  with JS, HTML and CSS. Check out the repo below!
+                </p>
+                <a
+                  href="https://github.com/YSX-Brian/by_website"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
             </article>
           </div>
         </div>
       </section>
-      <section id="resume">
+      <section id="resume" class="page-style">
         <div class="part part-transition">
           <h2>Resume</h2>
           <p>
             With 5+ years of experience in academia, I've worked with all kinds
             of scientists, physicians, and students on all manner of projects.
             As a result, I'm confident in my ability to connect and synergize
-            with any development team. I invite you to take a look at my resume
-            and contact me if you're looking for a web developer who values
-            collaboration, communication, and attention to detail.
+            with any team when it comes to software development as well. I
+            invite you to take a look at my resume and contact me if you're
+            looking for a web developer who values collaboration, communication,
+            and attention to detail.
           </p>
           <a href="/data/Brian_Yueh_SW_Resume.pdf" download="brian_yueh_resume">
             <button class="resume-button">Download Resume</button></a
           >
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="page-style">
         <div class="part part-transition">
           <h2>Contact</h2>
           <p>
