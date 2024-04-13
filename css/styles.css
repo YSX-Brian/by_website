@@ -22,7 +22,7 @@ a:active {
 }
 
 .navbar {
-  border: 1px solid grey;
+  border: 1px solid #00437a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ a:active {
   padding: 1rem;
 }
 
-a:hover {
+.links a:hover {
   text-shadow: 0 0 0 grey;
   background: lightgray;
   border-radius: 1rem;
@@ -53,8 +53,22 @@ a:hover {
   background: url(../img/sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 98.5vw;
+  width: 100vw;
+  max-width: 100%;
   color: white;
+  border-radius: 0.5rem;
+}
+
+.intro-heading {
+  font-size: 4.5rem;
+}
+
+.intro-text {
+  font-size: 1.6rem;
+}
+
+em {
+  font-style: normal;
 }
 
 #phrase-one,
@@ -69,15 +83,15 @@ a:hover {
 }
 
 #phrase-one {
-  animation-delay: 1.2s;
+  animation-delay: 1.5s;
 }
 
 #word-one {
-  animation-delay: 2s;
+  animation-delay: 2.4s;
 }
 
 #word-two {
-  animation-delay: 2.8s;
+  animation-delay: 3s;
 }
 
 #word-three {
@@ -93,12 +107,6 @@ a:hover {
     opacity: 1;
   }
 }
-
-/* .profile {
-  border-radius: 50%;
-  margin: 0.5rem 1rem;
-  max-height: 300px;
-} */
 
 .part {
   opacity: 0;
@@ -119,12 +127,24 @@ a:hover {
   height: 100vh;
 }
 
+#about a {
+  text-decoration: underline;
+}
+
 #about ul {
   padding-left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
+}
+
+.main-skills {
+  margin: 3rem 0;
+}
+
+.other-skills {
+  margin-bottom: 3rem;
 }
 
 #portfolio {
@@ -142,10 +162,17 @@ a:hover {
 }
 
 .project-grid article {
-  border: 1px solid lightgray;
-  border-radius: 1rem;
+  border: 2px solid #00437a;
+  border-radius: 0.4rem;
   padding: 1rem;
-  box-shadow: 0 0 2px grey;
+}
+
+article a {
+  margin: 1rem;
+}
+
+.project-grid img {
+  max-width: 250px;
 }
 
 #resume {
@@ -183,6 +210,23 @@ a:hover {
 }
 
 footer {
-  border: 1px solid grey;
+  border: 1px solid #00437a;
   padding-bottom: 1rem;
+  background: linear-gradient(to right, #1782c1, #005c9f, #00437a);
+  color: white;
+}
+
+@media screen and (max-width: 1101px) {
+  .intro {
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .intro {
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+  }
 }
