@@ -28,55 +28,64 @@
     </nav>
     <main>
       <section class="intro">
-        <!-- <img
-          class="profile"
-          src="https://picsum.photos/300/300"
-          alt="placeholder"
-        /> -->
         <div>
-          <h1>Hi, I'm Brian Yueh, a web developer.</h1>
-          <p id="phrase-one">I'm interested in building</p>
-          <em id="word-one">responsive,</em>
-          <em id="word-two">clean,</em>
-          <em id="word-three">and creative websites.</em>
+          <h1 class="intro-heading">Hi, I'm Brian Yueh, a web developer.</h1>
+          <div class="intro-text">
+            <p id="phrase-one">I'm interested in building</p>
+            <em id="word-one">responsive,</em>
+            <em id="word-two">clean,</em>
+            <em id="word-three">and creative websites.</em>
+          </div>
         </div>
       </section>
       <section id="about">
         <div class="part part-transition">
           <h2>About</h2>
+          <p>Thank you for visiting my page!</p>
           <p>
-            Thank you for visiting my page! <br />
-            I'm always seeking to improve and further my knowledge and skills. I
+            My name is Brian and I'm a web developer from Queens, New York. I'm
+            always seeking to improve and further my knowledge and skills. I
             love learning from others as well as teaching others. I enjoy
             designing web pages and bringing them to life, and am looking
             forward to doing so much more as a developer.
           </p>
           <p>
-            In my previous life I was a cancer researcher and had the privilege
-            of working with many great scientists. I was fortunate enough to be
-            involved with these
-            <a href="#">publications</a> (if you're interested).
+            In my previous life, I was a cancer researcher who had the privilege
+            of working with many great scientists. If interested, you may view
+            my publications
+            <a
+              href="https://www.researchgate.net/scientific-contributions/Brian-Yueh-2184225265"
+              target="_blank"
+              >here</a
+            >.
           </p>
-          <h3>Main Skills</h3>
-          <ul>
-            <li><i class="fa-brands fa-react fa-xl"></i> React</li>
-            <li><i class="fa-brands fa-js fa-xl"></i> JavaScript/Typescript</li>
-            <li><i class="fa-brands fa-python fa-xl"></i> Python</li>
-            <li><i class="fa-brands fa-css3 fa-xl"></i> CSS</li>
-            <li><i class="fa-brands fa-html5 fa-xl"></i> HTML</li>
-            <li><i class="fa-brands fa-square-git fa-xl"></i> Git</li>
-          </ul>
-          <h3>Other Skills</h3>
-          <ul>
-            <li>jQuery</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>React Native</li>
-            <li>Angular</li>
-            <li>MongoDB</li>
-            <li>SQL</li>
-            <li>Jest</li>
-          </ul>
+          <div class="main-skills">
+            <h3>Main Skills</h3>
+            <ul>
+              <li><i class="fa-brands fa-react fa-xl"></i> React</li>
+              <li>
+                <i class="fa-brands fa-js fa-xl"></i> JavaScript/Typescript
+              </li>
+              <li><i class="fa-brands fa-python fa-xl"></i> Python</li>
+              <li><i class="fa-brands fa-css3 fa-xl"></i> CSS</li>
+              <li><i class="fa-brands fa-html5 fa-xl"></i> HTML</li>
+              <li><i class="fa-brands fa-square-git fa-xl"></i> Git</li>
+            </ul>
+          </div>
+          <div class="other-skills">
+            <h3>Other Skills</h3>
+            <ul>
+              <li>jQuery</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>React Native</li>
+              <li>Angular</li>
+              <li>MongoDB</li>
+              <li>SQL</li>
+              <li>Jest</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
           <h3>Currently Learning: Django!</h3>
         </div>
       </section>
@@ -86,54 +95,98 @@
           <div class="project-grid">
             <article>
               <h3>MyFlix/Movies</h3>
+              <img
+                src="img/movies-main-cropped.png"
+                alt="Movies site main page."
+              />
               <p>
                 The client-side component of a "movies" web application, built
-                with React. Allows users to access a database with information
-                on movies, genres, and directors. Users can sign up,
-                update/change their account information, and manage a list of
-                favorite movies.
+                with React/JS. Users can sign up, update/change their account
+                information, and manage a list of favorite movies.
               </p>
-              <a href="https://github.com/YSX-Brian/Movies-react-client"
+              <a
+                href="https://github.com/YSX-Brian/Movies-react-client"
+                target="_blank"
                 >GitHub</a
               >
-              <a href="https://myflix17507.netlify.app/">Website</a>
+              <a href="https://myflix17507.netlify.app/" target="_blank"
+                >Website</a
+              >
             </article>
             <article>
               <h3>Games</h3>
+              <img src="img/games-main.png" alt="Games site main page." />
               <p>
-                Video game information app. Search games by title, genre,
-                platform, and more.
+                Video game information app built with React/TypeScript and
+                Chakra UI. Search games by title, genre, platform, and more.
               </p>
-              <a href="">GitHub</a>
-              <a href="">Website</a>
+              <a
+                href="https://github.com/YSX-Brian/games-project"
+                target="_blank"
+                >GitHub</a
+              >
+              <a href="https://games-project-pi.vercel.app/" target="_blank"
+                >Website</a
+              >
+            </article>
+
+            <article>
+              <h3>PokeDex App</h3>
+              <img src="img/poke-modal.png" alt="PokeDex modal view." />
+              <p>
+                A PokeDex application built with JS and Bootstrap that gives
+                information on the first 251 Pokemon.
+              </p>
+              <a href="https://github.com/YSX-Brian/PokeDex-App" target="_blank"
+                >GitHub</a
+              >
+              <a href="https://ysx-brian.github.io/PokeDex-App/" target="_blank"
+                >Website</a
+              >
+            </article>
+            <article>
+              <h3>MyFlix/Movies - Angular</h3>
+              <img
+                src="img/myFlix-Angular-main.png"
+                alt="Movies angular client main page."
+              />
+              <p>
+                The client-side component of a "movies" web application, built
+                with Angular/TypeScript. Connects to the same Movies API as the
+                React client.
+              </p>
+              <a
+                href="https://ysx-brian.github.io/myFlix-Angular-client/welcome"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://github.com/YSX-Brian/myFlix-Angular-client"
+                target="_blank"
+                >Website</a
+              >
             </article>
             <article>
               <h3>MyFlix/Movies API</h3>
               <p>
-                About The server-side component of a "movies" web application.
-                Allows users to access a database with information on movies,
-                genres, and directors. Users can sign up, update/change their
-                account information, and manage a list of favorite movies.
+                The server-side component of a "movies" web application. Allows
+                users to access a database with information on movies, genres,
+                and directors.
               </p>
-              <a href="">GitHub</a>
+              <a href="https://github.com/YSX-Brian/Movie_API" target="_blank"
+                >GitHub</a
+              >
             </article>
             <article>
-              <h3>PokeDex App</h3>
+              <h3>Portfolio Website</h3>
               <p>
-                A PokeDex application that gives information on the first 251
-                Pokemon.
+                This site you're viewing now was built to replace my old one,
+                which was my very first coding project back in 2022. Created
+                with JS, HTML and CSS. Check out the repo below!
               </p>
-              <a href="">GitHub</a>
-              <a href="https://ysx-brian.github.io/PokeDex-App/">Website</a>
-            </article>
-            <article>
-              <h3>MyFlix/Movies - Angular</h3>
-              <p>
-                The client-side component of a "movies" web application, built
-                with Angular. Connects to the same Movies API.
-              </p>
-              <a href="">GitHub</a>
-              <a href="">Website</a>
+              <a href="https://github.com/YSX-Brian/by_website" target="_blank"
+                >GitHub</a
+              >
             </article>
           </div>
         </div>
@@ -146,10 +199,12 @@
             of scientists, physicians, and students on all manner of projects.
             As a result, I'm confident in my ability to connect and synergize
             with any development team. I invite you to take a look at my resume
-            and contact me if you're looking for someone who values
+            and contact me if you're looking for a web developer who values
             collaboration, communication, and attention to detail.
           </p>
-          <button class="resume-button">Download My Resume</button>
+          <a href="/data/Brian_Yueh_SW_Resume.pdf" download="brian_yueh_resume">
+            <button class="resume-button">Download Resume</button></a
+          >
         </div>
       </section>
       <section id="contact">
@@ -167,7 +222,7 @@
             >
           </div>
           <div>
-            <a href="https://github.com/YSX-Brian"
+            <a href="https://github.com/YSX-Brian" target="_blank"
               ><i class="fa-brands fa-square-github fa-xl"></i>
               https://github.com/YSX-Brian</a
             >
@@ -181,11 +236,13 @@
         Photo by
         <a
           href="https://unsplash.com/@enginakyurt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          target="_blank"
           >engin akyurt</a
         >
         on
         <a
           href="https://unsplash.com/photos/white-clouds-and-blue-sky-during-daytime-zlGobrmAuyE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          target="_blank"
           >Unsplash</a
         >
       </p>
