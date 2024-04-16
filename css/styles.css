@@ -36,7 +36,7 @@ a:active {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
 }
 
@@ -46,22 +46,39 @@ a:active {
   background: white;
   border: 1px solid #00437a;
   display: flex;
-  height: 5vh;
+  min-height: 3rem;
   justify-content: center;
   position: fixed;
   top: 0;
   width: 100vw;
   z-index: 1;
+  overflow: hidden;
 }
 
 .navbar a {
-  margin-right: 1.8rem;
-  padding: 1rem;
+  margin: 0 0.9rem;
+  padding: 0.8rem;
+  transition: 0.3s;
 }
 
 .navbar a:hover {
-  background: lightgray;
   border-radius: 1rem;
+  background: #e3e6e3;
+}
+
+#mobile-links,
+.icon {
+  display: none;
+}
+
+#mobile-links a {
+  display: block;
+}
+
+.navbar .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* intro page */
@@ -73,7 +90,7 @@ a:active {
   border-radius: 0.5rem;
   color: white;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   max-width: 100%;
   width: 100vw;
@@ -81,6 +98,7 @@ a:active {
 
 .intro-heading {
   font-size: 4.5rem;
+  padding: 0 1.4rem;
 }
 
 .intro-text {
@@ -237,7 +255,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
   #portfolio {
-    height: 104vh;
+    min-height: 104vh;
   }
   section {
     width: 74vw;
@@ -259,7 +277,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
   #portfolio {
-    height: 102vh;
+    min-height: 102vh;
   }
   section {
     width: 74vw;
@@ -285,7 +303,7 @@ footer {
     grid-template-columns: 1fr;
   }
   #portfolio {
-    height: 196vh;
+    min-height: 196vh;
   }
   section {
     width: 80vw;
@@ -311,9 +329,21 @@ footer {
     grid-template-columns: 1fr;
   }
   #portfolio {
-    height: 188vh;
+    min-height: 220vh;
   }
   section {
     width: 80vw;
+  }
+  .desktop-links {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+}
+
+@media (height < 600px) {
+  body {
+    line-height: 1;
   }
 }
