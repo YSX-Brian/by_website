@@ -41,7 +41,8 @@ a:hover {
   transform: none;
 }
 
-.page-style {
+.page-style,
+.container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -53,7 +54,7 @@ a:hover {
 .navbar {
   align-items: center;
   background: white;
-  border: 1px solid #00437a;
+  border-bottom: 1px solid #00437a;
   display: flex;
   min-height: 3rem;
   justify-content: center;
@@ -237,14 +238,42 @@ footer {
 }
 
 footer a {
-  padding: 0 0.2rem;
+  padding: 0 0.15rem;
 }
 
 footer a:hover {
   background: #00437a;
 }
 
-/* responsive elements */
+/* responsive elements width*/
+@media screen and (min-width: 651px) and (max-width: 1800px) {
+  section {
+    width: 74vw;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1200px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  body {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  #about ul {
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  section {
+    width: 80vw;
+  }
+}
+
 @media screen and (min-width: 1201px) and (max-width: 1800px) {
   .intro-heading {
     font-size: 3.9rem;
@@ -252,52 +281,23 @@ footer a:hover {
   .intro-text {
     font-size: 1.5rem;
   }
-
-  section {
-    width: 74vw;
-  }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
-  body {
-    font-size: 85%;
-  }
   .intro-heading {
     font-size: 3.3rem;
   }
   .intro-text {
     font-size: 1.4rem;
   }
-  .project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  #portfolio {
-    min-height: 104vh;
-  }
-  section {
-    width: 74vw;
-  }
 }
 
 @media screen and (min-width: 651px) and (max-width: 1000px) {
-  body {
-    font-size: 85%;
-  }
   .intro-heading {
     font-size: 2.8rem;
   }
-
   .intro-text {
     font-size: 1.3rem;
-  }
-  .project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  #portfolio {
-    min-height: 102vh;
-  }
-  section {
-    width: 74vw;
   }
 }
 
@@ -308,22 +308,8 @@ footer a:hover {
   .intro-heading {
     font-size: 2.5rem;
   }
-
   .intro-text {
     font-size: 1.2rem;
-  }
-  #about ul {
-    gap: 0.5rem;
-    grid-template-columns: 1fr 1fr;
-  }
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-  #portfolio {
-    min-height: 196vh;
-  }
-  section {
-    width: 80vw;
   }
 }
 
@@ -334,22 +320,8 @@ footer a:hover {
   .intro-heading {
     font-size: 2rem;
   }
-
   .intro-text {
     font-size: 1.1rem;
-  }
-  #about ul {
-    gap: 0.5rem;
-    grid-template-columns: 1fr 1fr;
-  }
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-  #portfolio {
-    min-height: 220vh;
-  }
-  section {
-    width: 80vw;
   }
   .desktop-links {
     display: none;
@@ -359,8 +331,42 @@ footer a:hover {
   }
 }
 
+/* responsive elements height*/
+@media (901px < height < 1250px) {
+  .container {
+    min-height: 120vh;
+  }
+}
+
 @media (height < 900px) {
-  .page-style {
-    min-height: 200vh;
+  .navbar {
+    min-height: 2.5rem;
+  }
+}
+
+@media (751px < height < 900px) {
+  .container {
+    min-height: 140vh;
+  }
+  .main-skills {
+    margin: 2rem 0;
+  }
+  .other-skills {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (height < 750px) {
+  .container {
+    min-height: 160vh;
+  }
+  .main-skills {
+    margin: 1.5rem 0;
+  }
+  .other-skills {
+    margin-bottom: 1.5rem;
+  }
+  .part {
+    transform: scale(1);
   }
 }
