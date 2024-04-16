@@ -32,8 +32,13 @@ a:hover {
 
 .part {
   opacity: 0;
-  transform: scale(1.1);
-  transition: opacity 1s, transform 1s;
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .part {
+    transition: opacity 1s, transform 1s;
+  }
 }
 
 .part-transition {
@@ -245,10 +250,30 @@ footer a:hover {
   background: #00437a;
 }
 
-/* responsive elements width*/
+/*        responsive elements width        */
+/* for bigger screens */
+@media screen and (width >= 3001px) {
+  body {
+    font-size: 160%;
+  }
+  .intro-heading {
+    font-size: 5.5rem;
+  }
+  .intro-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (2500px <= width <= 3000px) {
+  body {
+    font-size: 110%;
+  }
+}
+
+/* for smaller screens */
 @media screen and (min-width: 651px) and (max-width: 1800px) {
   section {
-    width: 74vw;
+    width: 78vw;
   }
 }
 
@@ -258,6 +283,14 @@ footer a:hover {
   }
   body {
     font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1400px) and (orientation: portrait) {
+  .intro {
+    background: url(../img/sky-cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -332,19 +365,19 @@ footer a:hover {
 }
 
 /* responsive elements height*/
-@media (901px < height < 1250px) {
-  .container {
-    min-height: 120vh;
-  }
-}
-
-@media (height < 900px) {
+@media (height <= 900px) {
   .navbar {
     min-height: 2.5rem;
   }
 }
 
-@media (751px < height < 900px) {
+@media (901px <= height <= 1250px) {
+  .container {
+    min-height: 120vh;
+  }
+}
+
+@media (751px <= height <= 900px) {
   .container {
     min-height: 140vh;
   }
@@ -356,7 +389,7 @@ footer a:hover {
   }
 }
 
-@media (height < 750px) {
+@media (height <= 750px) {
   .container {
     min-height: 160vh;
   }
@@ -367,6 +400,6 @@ footer a:hover {
     margin-bottom: 1.5rem;
   }
   .part {
-    transform: scale(1);
+    transform: none;
   }
 }
