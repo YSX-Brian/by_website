@@ -21,6 +21,11 @@ a:active {
   text-decoration: none;
 }
 
+a:hover {
+  border-radius: 1rem;
+  background: #e3e6e3;
+}
+
 .part {
   opacity: 0;
   transform: scale(1.1);
@@ -59,11 +64,6 @@ a:active {
   margin: 0 0.9rem;
   padding: 0.8rem;
   transition: 0.3s;
-}
-
-.navbar a:hover {
-  border-radius: 1rem;
-  background: #e3e6e3;
 }
 
 #mobile-links,
@@ -192,7 +192,9 @@ a:active {
 }
 
 article a {
-  margin: 1rem;
+  transition: 0.3s;
+  padding: 0.5rem;
+  margin: 0.6rem;
 }
 
 .project-grid img {
@@ -208,6 +210,7 @@ article a {
   cursor: pointer;
   margin-top: 1rem;
   padding: 0.6rem;
+  transition: 0.3s;
 }
 
 .resume-button:hover {
@@ -219,12 +222,26 @@ article a {
   margin-bottom: 1rem;
 }
 
+#contact a {
+  transition: 0.3s;
+  padding: 0.3rem;
+}
+
 /* footer */
 footer {
   background: linear-gradient(to right, #1782c1, #005c9f, #00437a);
   border: 1px solid #00437a;
   color: white;
   padding-bottom: 1rem;
+}
+
+footer a {
+  padding: 0.2rem;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  background: #00437a;
 }
 
 /* responsive elements */
