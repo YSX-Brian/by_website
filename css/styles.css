@@ -74,12 +74,12 @@ a:hover {
   padding: 0.8rem;
 }
 
-#mobile-links,
+.mobile-links,
 .icon {
   display: none;
 }
 
-#mobile-links a {
+.mobile-links a {
   display: block;
 }
 

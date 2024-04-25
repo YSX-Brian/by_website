@@ -1,5 +1,5 @@
 function toggleMobileMenu() {
-  const menu = document.getElementById("mobile-links");
+  const menu = document.querySelector(".mobile-links");
   if (menu.style.display === "block") {
     menu.style.display = "none";
   } else {
