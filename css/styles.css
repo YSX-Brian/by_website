@@ -71,7 +71,7 @@ a:hover {
 }
 
 .navbar a {
-  margin: 0 0.9rem;
+  margin-right: 0.5rem;
   padding: 0.8rem;
 }
 
@@ -87,7 +87,7 @@ a:hover {
 .navbar .icon {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
 }
 
 /* intro page */
@@ -368,6 +368,10 @@ footer a:hover {
 @media (height <= 900px) {
   .navbar {
     min-height: 2.5rem;
+  }
+  .navbar .icon {
+    right: 0;
+    top: 0;
   }
 }
 
