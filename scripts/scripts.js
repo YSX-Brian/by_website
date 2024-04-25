@@ -1,10 +1,6 @@
 function toggleMobileMenu() {
   const menu = document.querySelector(".mobile-links");
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+  menu.classList.toggle("mobile-links--expand");
 }
 
 const observer = new IntersectionObserver((entries) => {

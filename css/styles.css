@@ -74,13 +74,17 @@ a:hover {
   padding: 0.8rem;
 }
 
-.mobile-links,
-.icon {
+.icon,
+.mobile-links {
   display: none;
 }
 
 .mobile-links a {
   display: block;
+}
+
+.desktop-links a {
+  margin: 0 2rem;
 }
 
 .navbar .icon {
@@ -262,6 +266,9 @@ footer a:hover {
   .intro-text {
     font-size: 2.5rem;
   }
+  .navbar {
+    min-height: 5rem;
+  }
 }
 
 @media screen and (2500px <= width <= 3000px) {
@@ -361,6 +368,17 @@ footer a:hover {
   }
   .icon {
     display: block;
+  }
+  .mobile-links {
+    display: initial;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.2s, opacity 0.3s;
+  }
+  .mobile-links--expand {
+    opacity: 1;
+    max-height: 100vh;
   }
 }
 
