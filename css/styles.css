@@ -71,7 +71,6 @@ a:hover {
 }
 
 .navbar a {
-  margin-right: 0.5rem;
   padding: 0.8rem;
 }
 
@@ -85,6 +84,7 @@ a:hover {
 }
 
 .navbar .icon {
+  margin-right: 0.5rem;
   position: absolute;
   right: 0;
   top: 5px;
@@ -372,6 +372,7 @@ footer a:hover {
   .navbar .icon {
     right: 0;
     top: 0;
+    margin-right: 0.3rem;
   }
 }
 
