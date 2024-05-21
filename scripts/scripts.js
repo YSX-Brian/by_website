@@ -3,16 +3,17 @@ function toggleMobileMenu() {
   menu.classList.toggle("mobile-links--expand");
 }
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("part-transition");
-      return;
-    }
-
-    entry.target.classList.remove("part-transition");
-  });
-});
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("part-transition");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
 
 const parts = document.querySelectorAll(".part");
 
